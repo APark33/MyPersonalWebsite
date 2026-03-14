@@ -328,12 +328,12 @@
         thumb: '🛰️'
       },
       {
-        title: 'Arduino Smart Sensor',
+        title: 'Electronics Projects',
         desc: 'Tinkercad circuit + code for reading temperature & light, streaming to a simple web dashboard.',
         tags: ['hw','web'],
         link: '#',
         call: 'View Circuit',
-        thumb: '🔌'
+        thumb: 'electronics1.jpg'
       },
       {
         title: 'Air Quality Explorer',
@@ -376,7 +376,9 @@
         const el = document.createElement('article');
         el.className = 'proj fade-in';
         el.innerHTML = `
-          <div class="thumb" aria-hidden="true" style="font-size:40px">${p.thumb}</div>
+          <div class="thumb" aria-hidden="true">
+          ${p.thumb.endsWith('.jpg') ? `<img src="${p.thumb}" style="height:80px">` : p.thumb}
+          </div>
           <div class="proj-body">
             <h3 style="margin:0 0 6px; font-size:18px">${p.title}</h3>
             <p style="margin:0 0 10px; color:var(--muted)">${p.desc}</p>
