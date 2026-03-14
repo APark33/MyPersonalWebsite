@@ -377,7 +377,9 @@
         el.className = 'proj fade-in';
         el.innerHTML = `
           <div class="thumb" aria-hidden="true">
-          ${p.thumb.endsWith('.jpg') ? `<img src="${p.thumb}" style="height:80px">` : p.thumb}
+          ${p.thumb.endsWith('.jpg') 
+          ? `<img src="${p.thumb}" style="width:100%; height:100%; object-fit:cover;">`
+          : `<span style="font-size:40px">${p.thumb}</span>`}
           </div>
           <div class="proj-body">
             <h3 style="margin:0 0 6px; font-size:18px">${p.title}</h3>
