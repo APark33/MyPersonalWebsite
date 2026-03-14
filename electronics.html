@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <title>Electronics Projects</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
     margin:40px;
@@ -12,16 +14,36 @@ body{
     color:white;
 }
 
-.container{
-    display:grid;
-    grid-template-columns: 300px 1fr;
-    gap:30px;
+h1{
+    margin-bottom:30px;
 }
 
-.images img{
+.back{
+    margin-bottom:30px;
+}
+
+.back a{
+    color:#ff4c4c;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.back a:hover{
+    text-decoration:underline;
+}
+
+.project{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:30px;
+    margin-bottom:50px;
+    align-items:center;
+}
+
+.project img{
     width:100%;
-    margin-bottom:20px;
     border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
 }
 
 .description{
@@ -29,50 +51,76 @@ body{
     line-height:1.6;
 }
 
-h1{
-    margin-bottom:30px;
-}
 </style>
 
 </head>
 
 <body>
 
+<div class="back">
+<a href="index.html">← Back to Portfolio</a>
+</div>
+
 <h1>Electronics Projects</h1>
 
-<div class="container">
 
-<div class="images">
+<div class="project">
 
 <img src="electronics1.jpg">
-<img src="555.jpg">
-<img src="night.jpg">
-
-</div>
 
 <div class="description">
 
 <h2>Hello and Welcome!</h2>
+
 <p>
-Welcome to my Electronics page.
-Take a look at my projects.
+Welcome to my electronics project page. Here are a few examples of
+hands-on circuit prototyping and experimentation.
 </p>
+
+</div>
+
+</div>
+
+
+
+<div class="project">
+
+<img src="555.jpg">
+
+<div class="description">
 
 <h2>IC-555 Timer</h2>
+
 <p>
-Prototyping on a Proto-Breadboard a Transistor TipI20/IC-555
-Timer Circuit.
+Prototyping on a proto-breadboard using a transistor TIP120 and
+an IC-555 timer to explore timing circuits and switching behavior.
 </p>
+
+</div>
+
+</div>
+
+
+
+<div class="project">
+
+<img src="night.jpg">
+
+<div class="description">
 
 <h2>Night Light</h2>
+
 <p>
-Prototype a nightlight using a 9V Battery, Breadboard,
-Photoresistor, Transistor, BC547, Resistor 100 k, LED.
+A simple light-activated night light built using a 9V battery,
+breadboard, photoresistor, transistor BC547, resistor network,
+and LED. The circuit turns on automatically when the room
+becomes dark.
 </p>
 
 </div>
 
 </div>
+
 
 </body>
 </html>
